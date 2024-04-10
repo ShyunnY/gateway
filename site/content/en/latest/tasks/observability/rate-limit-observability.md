@@ -61,9 +61,8 @@ data:
       telemetry:
         tracing:
           sampleRate: 50
-          backendRef:
-            name: otel-svc
-            namespace: observability
+          provider:
+            url: otel-svc.observability
 EOF
 ```
 
